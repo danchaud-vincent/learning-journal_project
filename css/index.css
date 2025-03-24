@@ -37,21 +37,6 @@ header{
 
 /******* GLOBAL STYLES *******/
 
-/*  GLOBAL VAR */
-ul{
-    list-style-type: none; /* Remove bullets */
-    padding: 0; /* Remove padding */
-    margin: 0; /* Remove margins */
-}
-
-.light{
-    color: var(--white);
-}
-
-.hidden{
-    display: none;
-}
-
 /*  LAYOUT */
 .wrapper{
     min-width: 576px;
@@ -129,7 +114,7 @@ footer{
 
 
 /* BUTTONS */
-.btn-open-sidebar, .btn-close-sidebar{
+.btn-open-sidebar, .btn-close-sidebar, .btn-moreless-articles{
     border: none;
     background: none;
     cursor: pointer;
@@ -144,6 +129,22 @@ footer{
     top: 5px;
     right: 5px;
 }
+
+.btn-moreless-articles{
+    display: block;
+    margin: 0 auto 3.25em auto;
+    text-decoration: underline;
+    font-weight: 700;
+    font-size: var(--fs-s);
+}
+
+/* LIST */
+ul{
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margins */
+}
+
 
 /*  NAVBAR */
 .header-nav{
@@ -338,5 +339,14 @@ p{
         grid-template-columns: 1fr 1fr 1fr;
     }
 
+}
+
+/******* UTILITIES CLASS *******/
+.light{
+    color: var(--white);
+}
+
+.hidden{
+    display: none;
 }
 
