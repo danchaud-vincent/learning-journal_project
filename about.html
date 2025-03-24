@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- VIEWPORT -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- GOOGLE FONT : Roboto & Source Code pro -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+        
+        <!-- FONT AWESOME -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        <!-- STYLESHEET -->
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+    <body>
+        <header class="wrapper container">
+            <div class="header-title">
+                <img src="images/logo.png" alt="logo">
+                <h2>My Learning Journal</h2>
+            </div>
+
+            <nav class="header-nav">
+                <ul class="header-nav-ul">
+                    <li><a class="nav-link" href="index.html">HOME</a></li>
+                    <li><a class="nav-link" href="about.html">ABOUT</a></li>
+                </ul>
+            </nav>
+            
+            <button class="btn-open-sidebar" id="sidebarBtn"><i class="fa-solid fa-bars"></i></button>
+            
+            <nav class="header-sidebar-small-screen hidden">
+                <h2 class="nav-sidebar-title">MENU</h2>
+                <button class="btn-close-sidebar light" id="closeSidebarBtn"><i class="fa-solid fa-xmark"></i></button>
+                <ul class="header-sidebar-ul">
+                    <li><a class="nav-link-sidebar" href="index.html">HOME</a></li>
+                    <li><a class="nav-link-sidebar" href="about.html">ABOUT</a></li>
+                </ul>
+            </nav>
+    
+        </header>
+
+        <main class="wrapper">
+            <section class="about-hero-section">
+                <img class="about-hero-img" src="images/blog-image-02.png" alt="panorama of the pyrenean mountains with fields in the foreground">
+                <div class="about-hero-content">
+                    <h1>Hi there! My name is Roku and welcome to my learning journal.</h1>
+                    <p>After several months of learning in the Frontend Developer Career Path, I've made the big jump over to the Bootcamp to get expert code reviews of my Solo Projects projects and meet like-minded peers.</p>
+                </div>
+            </section>
+
+            <section class="about-details-section container">
+
+                <div class="about-details">
+                    <h2>How I stay committed to learning</h2>
+                    <p>I like to think of myself as a lifelong learner. I used to spend hours and hours learning, then try to create simple projects using what I learned or work new techniques into existing projects.</p>
+                    <p>I like to think of myself as a lifelong learner. I used to spend hours and hours learning, then try to create simple projects using what I learned or work new techniques into existing projects.</p>
+                </div>
+
+                <div class="about-details">
+                    <h2>How I stay committed to learning</h2>
+                    <p>I like to think of myself as a lifelong learner. I used to spend hours and hours learning, then try to create simple projects using what I learned or work new techniques into existing projects.</p>
+                    <p>I like to think of myself as a lifelong learner. I used to spend hours and hours learning, then try to create simple projects using what I learned or work new techniques into existing projects.</p>
+                </div>
+
+            </section>
+
+            <section class="articles-section container">
+                <a class="article-link" href="#" aria-label="Read blog one">
+                    <article>
+                        <img class="article-img" src="images/blog-image-06.png" alt="A laptop on a desk with a green plant to its right.">
+                        <div class="article-content">
+                            <p><time datetime="2022-07-23">JULY 23, 2022</time></p>
+                            <h2 class="article-title">Blog one</h2>
+                            <p class="article-p">I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path.</p>
+                        </div>
+                    </article>
+                </a>
+
+                <a class="article-link" href="#" aria-label="Read blog two">
+                    <article>
+                        <img class="article-img" src="images/blog-image-05.png" alt="A modern painting with dark and purple colors.">
+                        <div class="article-content">
+                            <p><time datetime="2022-07-23">JULY 23, 2022</time></p>
+                            <h2 class="article-title">Blog two</h2>
+                            <p class="article-p">I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path.</p>
+                        </div>
+                    </article>
+                </a>
+
+                <a class="article-link" href="#" aria-label="Read blog three">
+                    <article>
+                        <img class="article-img" src="images/blog-image-04.png" alt="A hand holding a lightbulb.">
+                        <div class="article-content">
+                            <p><time datetime="2022-07-23">JULY 23, 2022</time></p>
+                            <h2 class="article-title">Blog three</h2>
+                            <p class="article-p">I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path.</p>
+                        </div>
+                    </article>
+                </a>
+
+            </section>
+
+        </main>
+
+        <footer class="wrapper">
+            <h3 class="footer-title">My Learning Journal</h3>
+            <p class="footer-p">Copyright ©2022</p>
+        </footer>
+
+        <script src="index.js"></script>
+    </body>
+</html>
