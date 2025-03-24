@@ -9,6 +9,9 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
         
+        <!-- FONT AWESOME -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
         <!-- STYLESHEET -->
         <link rel="stylesheet" href="css/index.css">
     </head>
@@ -25,6 +28,18 @@
                     <li><a class="nav-link" href="#">ABOUT</a></li>
                 </ul>
             </nav>
+            
+            <button class="btn-open-sidebar" id="sidebarBtn"><i class="fa-solid fa-bars"></i></button>
+            
+            <nav class="header-sidebar-small-screen hidden">
+                <h2 class="nav-sidebar-title">MENU</h2>
+                <button class="btn-close-sidebar light" id="closeSidebarBtn"><i class="fa-solid fa-xmark"></i></button>
+                <ul class="header-sidebar-ul">
+                    <li><a class="nav-link-sidebar" href="#">HOME</a></li>
+                    <li><a class="nav-link-sidebar" href="#">ABOUT</a></li>
+                </ul>
+            </nav>
+    
         </header>
         <main class="wrapper">
             <section class="hero-section">
@@ -111,5 +126,7 @@
             <h3 class="footer-title">My Learning Journal</h3>
             <p class="footer-p">Copyright ©2022</p>
         </footer>
+
+        <script src="index.js"></script>
     </body>
 </html>

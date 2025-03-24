@@ -35,8 +35,22 @@ header{
     --fs-title: 2.5rem; 
 }
 
-
 /******* GLOBAL STYLES *******/
+
+/*  GLOBAL VAR */
+ul{
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margins */
+}
+
+.light{
+    color: var(--white);
+}
+
+.hidden{
+    display: none;
+}
 
 /*  LAYOUT */
 .wrapper{
@@ -66,12 +80,10 @@ header{
     background-image: url("/images/blog-image-hero.png");
     background-position: center;
     background-size: cover;
-
 }
 
 .hero-content{
     color: var(--white);
-    
     
     display: flex;
     flex-direction: column;
@@ -97,16 +109,43 @@ footer{
     padding: 2.75em 0;
 }
 
+/* BUTTONS */
+.btn-open-sidebar, .btn-close-sidebar{
+    border: none;
+    background: none;
+    cursor: pointer;
+}
 
-/*  NAV */
+.btn-open-sidebar, .btn-close-sidebar{
+    font-size: 1.5rem;
+}
+
+.btn-close-sidebar{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+/*  NAVBAR */
+.header-nav{
+    display: none;
+}
+
 .header-nav-ul{
     display: flex;
     gap: 1em;
-    list-style-type: none; /* Remove bullets */
-    padding: 0; /* Remove padding */
-    margin: 0; /* Remove margins */
 }
 
+.header-sidebar-small-screen{
+    position: fixed;
+    height: 100vh;
+    width: 40vw;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    background-color: var(--black);
+    text-align: center;
+}
 
 /*  LINKS */
 a{
@@ -115,6 +154,23 @@ a{
 
 .nav-link{
     color: var(--black);
+}
+
+.nav-link:hover, .nav-link:focus, .nav-link:active{
+    text-decoration: underline;
+    font-weight: 900;
+}
+
+.nav-link-sidebar{
+    display: block;
+    color: var(--white);
+    padding: 1em 0;
+}
+
+.nav-link-sidebar:hover, .nav-link-sidebar:focus, .nav-link-sidebar:active{
+    background-color: var(--white);
+    color: var(--light-black);
+    font-weight: 900;
 }
 
 .article-link{
@@ -149,6 +205,11 @@ h1{
 
 p{
     line-height: 1.5;
+}
+
+.nav-sidebar-title{
+    color: var(--white);
+    margin: 1em;
 }
 
 .article-title{
@@ -193,6 +254,14 @@ p{
 /******* MEDIA QUERIES *******/
 
 @media (min-width: 768px){
+
+    .header-nav{
+        display: block;
+    }
+
+    .btn-open-sidebar{
+        display: none;
+    }
 
     .hero-content{
         padding-top: 10em;
